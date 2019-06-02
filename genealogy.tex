@@ -1,0 +1,256 @@
+
+\documentclass[final, 12pt]{beamer}
+%\usepackage[size=custom,width=200,height=107,scale=.5,orientation=portrait]{beamerposter}
+%\usepackage[scale=1.24]{beamerposter} % Use the beamerposter package for laying out the poster
+\usepackage[width=36in,scale=.5,orientation=landscape]{beamerposter}
+
+\usepackage{pst-slpe}
+\usepackage{pst-grad}
+\usepackage{pst-node}
+\usepackage{pst-blur}
+ 
+\definecolor{teacher}{HTML}{0000FF}  
+\definecolor{hostile}{HTML}{FF0000}  
+\definecolor{influence}{HTML}{808080}  
+\definecolor{colleagues}{RGB}{64 200 0}
+\definecolor{other}{RGB}{255 255 255} 
+
+
+\definecolor{anthropologist1}{HTML}{FFB3B3}  
+\definecolor{anthropologist2}{HTML}{FFE6E6}
+\definecolor{anthropologist3}{HTML}{CCCC00}
+ 
+\definecolor{linguist1}{HTML}{DBA909}  
+\definecolor{linguist2}{HTML}{F8EDCB} % EDBB99
+\definecolor{linguist3}{HTML}{533419}
+\definecolor{linguist-line}{HTML}{D2691E}
+
+\definecolor{linguist-fill2}{RGB}{255 255 0}
+\definecolor{linguist-fill3}{RGB}{255 255 0}
+\definecolor{linguist-fill4}{RGB}{255 255 0}
+ 
+\definecolor{philosopher1}{HTML}{66FF66} 
+\definecolor{philosopher2}{HTML}{EBFCF3}
+\definecolor{philosopher3}{HTML}{00FF00} 
+ 
+
+\definecolor{psychologist1}{HTML}{00FFFF}
+\definecolor{psychologist2}{HTML}{EBFCF3} % aqua (BLUE)
+\definecolor{psychologist3}{HTML}{269900}
+\definecolor{psychologist-fill3}{HTML}{00FF00}
+ 
+\definecolor{sociologist1}{HTML}{DDFF00}  
+\definecolor{sociologist2}{HTML}{DDFFCC}
+\definecolor{sociologist3}{HTML}{ACCC00}
+\definecolor{sociologist-line}{HTML}{D2691E}
+
+\definecolor{logician1}{HTML}{73AE9D}  
+\definecolor{logician2}{HTML}{DDFFCC}
+\definecolor{logician3}{HTML}{ACCC00}
+
+
+ 
+
+\definecolor{linglog1}{HTML}{FF7F24} % for barhillel 
+\definecolor{linglog2}{HTML}{FFE6E3}
+\definecolor{linglog3}{HTML}{FF0000}
+ 
+\definecolor{mathematician1}{HTML}{BCA9F5}  
+\definecolor{mathematician2}{HTML}{E0ECF8}
+\definecolor{mathematician3}{HTML}{0000FF}
+
+ 
+\definecolor{other-fill}{HTML}{D3D3D3}  
+ 
+
+  
+
+%-----------------------------------------------------------
+% Define the column widths and overall poster size
+% To set effective sepwid, onecolwid and twocolwid values, first choose how many columns you want and how much separation you want between columns
+% In this template, the separation width chosen is 0.024 of the paper width and a 4-column layout
+% onecolwid should therefore be (1-(# of columns+1)*sepwid)/# of columns e.g. (1-(4+1)*0.024)/4 = 0.22
+% Set twocolwid to be (2*onecolwid)+sepwid = 0.464
+% Set threecolwid to be (3*onecolwid)+2*sepwid = 0.708
+\setlength{\paperwidth}{54in} % A0 width: 46.8in
+\setlength{\paperheight}{36in} % A0 height: 33.1in
+ \setlength{\topmargin}{-0.5in} % Reduce the top margin size
+\usepackage{graphicx}  % Required for including images
+\usepackage{booktabs} % Top and bottom rules for tables 
+\begin{document}
+  
+\begin{frame}[t] % The whole poster is enclosed in one beamer frame
+ 
+\psset{xunit=1.6cm,yunit=.4cm,linewidth=3pt}
+\psset{gradangle=135,gradmidpoint=0.5,framesep=6pt}  
+
+\begin{pspicture}(-5, 80)(120, 240)
+%\begin{pspicture}(-25, 80)(135, 240)
+ 
+
+\psset{fillstyle=solid,fillcolor=linguist-fill4,framearc=0.5}
+\psset{linecolor=linguist-line}
+\psset{shadow=true}
+
+%\psframe(13.5,140)(18.5,153) % kazan school box
+%\psframe(18,162)(23,195)
+%\psframe(24,162)(28,200) % moscow circle
+%\psframe(29,170)(33,210)   % prague Circle
+%\rput(31,206 ){\psframebox[linecolor=black,fillcolor=linguist-fill2]{\Large Prague Linguistic Circle }}
+
+%\psframe[fillcolor=philosopher1](38,177)(49,195)   % vienna Circle
+%\psframe[fillcolor=philosopher1](33,135)(47,162)   % brentano circle
+%\psframe[fillcolor=philosopher1](33.5,176)(37,200)   % Polish logicians 
+
+% Generations: ellipses
+%\psellipse[fillstyle=solid,shadow=true,blur=true](6.5,80)(6,14)  %1st ellipse
+%\psellipse(6.5,119)(5,12)  %2nd ellipse
+%\psellipse (6.5,147)(6,13)  %3rd ellipse
+%\psellipse[fillcolor=linguist-fill3,linestyle=solid](5,200)(10,20)  %sapir circle
+%\psellipse[fillcolor=psychologist-fill3,linestyle=solid](58,189)(6,8)  %gestalt circle
+%\psellipse[fillcolor=psychologist-fill3,linestyle=solid](68,143)(4,25)  %wundt circle
+
+
+%\psset{fillcolor=linguist2}
+
+%\rput(3.3,154 ){\psframebox[ framesep=10pt] { \Large Neogrammarians    }} 
+%\rput(5,160){\psframebox[ linecolor=linguist-line,framesep=10pt]{ \LARGE Third Generation   }}
+%\rput(2,112 ){\psframebox [linecolor=linguist-line,framesep=10pt]{ \LARGE Second Generation   }}
+%\rput(2,85 ){\psframebox[linecolor=linguist-line,framesep=10pt,shadow=false,shadowsize=1,blur=true]{ \LARGE First Generation   }}
+
+
+
+
+%\psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](14,212)(37,235)   % machine translation
+%\psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](20,201)(28,225)   % machine translation
+%\psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5,shadow=false](27,212)(28.5,225)   % machine translation
+
+%\rput(32,230 ){\psframebox{\begin{tabular}{c}{\LARGE Machine translation  }  \end{tabular}}}      
+      
+
+%\rput(2,220 ){\psframebox{\begin{tabular}{c}{\Large Sapir circle }  \end{tabular}}} 
+
+%\psset{linecolor=linguist-line}
+%\rput(19,165 ){\psframebox{\begin{tabular}{c}{\Large St Petersburg School }\\1900-1918 \end{tabular}}}
+%\rput(18,144 ){\psframebox{\begin{tabular}{c}{\Large Kazan School }\\1874-1883 \end{tabular}}}
+%\rput(25,165 ){\psframebox{\begin{tabular}{c}{\Large Moscow School }\\  \end{tabular}}}
+%\rput(31,166 ){\psframebox{\begin{tabular}{c}{\Large Prague Circle }\\  \end{tabular}}}
+%\rput(48,189 ){\psframebox[linecolor=black,fillcolor=philosopher1]{\Large Vienna Circle }}
+%\rput(62,188 ){\psframebox[linecolor=black,fillcolor=psychologist3]{\Large Gestalt }}
+
+
+%sociology
+
+%\psset{gradangle=135,gradmidpoint=0.5,framesep=6pt,fillcolor=sociologist1,framearc=0.5}
+%\psset{linecolor=sociologist3}
+%\rput(-25,150 ){\psframebox[fillcolor=linguist-fill2,linecolor=sociologist-line,framesep=10pt,shadow=false,shadowsize=1,blur=true]{ \LARGE First Generation   }}
+%\psellipse[shadow=true,fillstyle=solid](-14.8,204)(8.5,9)  %5th ellipse
+%\psellipse[shadow=true,fillstyle=solid](-15,200)(8,16)  %2nd generation
+%\psellipse[shadow=true,fillstyle=solid](-15,153)(8,16)  %1ST GENERATION
+%\psellipse[shadow=true,fillstyle=solid](-15,120)(8,6)  %1st ellipse
+
+\psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](-5,150)(25,245)   % Chicago sociology
+\psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](27,150)(45,245)   % Columbia sociology
+\psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](47,150)(65,245)   % Harvard sociology
+\psframe[fillstyle=none,linecolor=black,linestyle=solid,framearc=0.5](58,180)(70,220)   % Harvard soc rel
+%\psellipse[shadow=true,fillstyle=solid](-5,180)(10,10)  % Columbia ellipse
+%\psellipse[shadow=true,fillstyle=solid](10.4,19)(3,10)  % Harvard ellipse
+%\psellipse[shadow=true,fillstyle=solid](-15,160)(3,8)  % UChicago ellipse
+%\psellipse[shadow=true,fillstyle=solid](-15,186)(3,4)  % bernard ogburn and chapin
+
+
+%\psset{shadow=false}
+
+   
+
+
+\psset{fillstyle=gradient,gradmidpoint=.5,gradangle=45}
+\rput(  -2,159) {\rnode{Dewey        } {\psframebox[gradbegin=linguist1,gradend=linguist2,linecolor=linguist3]{ \begin{tabular}{c}            John \Large{\textsc{Dewey} } \\ 1859--1952 \end{tabular} } } } 
+\rput(  74,204) {\rnode{Skinner      } {\psframebox[gradbegin=psychologist1,gradend=psychologist2,linecolor=psychologist3]{ \begin{tabular}{c}            B.F. \Large{\textsc{Skinner} } \\ 1904--1990 \end{tabular} } } } 
+\rput(  66,186) {\rnode{Tolman       } {\psframebox[gradbegin=psychologist1,gradend=psychologist2,linecolor=psychologist3]{ \begin{tabular}{c}          Edward \Large{\textsc{Tolman} } \\ 1886--1959 \end{tabular} } } } 
+\rput(  66,193) {\rnode{Murray       } {\psframebox[gradbegin=psychologist1,gradend=psychologist2,linecolor=psychologist3]{ \begin{tabular}{c}           Henry \Large{\textsc{Murray} } \\ 1893--1988 \end{tabular} } } } 
+\rput(  63,197) {\rnode{Allport      } {\psframebox[gradbegin=psychologist1,gradend=psychologist2,linecolor=psychologist3]{ \begin{tabular}{c}          Gordon \Large{\textsc{Allport} } \\ 1897--1967 \end{tabular} } } } 
+\rput(  10,212) {\rnode{Berelson     } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}              B. \Large{\textsc{Berelson} } \\ 1912--1979 \end{tabular} } } } 
+\rput(  32,181) {\rnode{Bernard      } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}          Luther \Large{\textsc{Bernard} } \\ 1881--1951 \end{tabular} } } } 
+\rput(  10,200) {\rnode{Blumer       } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         Herbert \Large{\textsc{Blumer} } \\ 1900--1987 \end{tabular} } } } 
+\rput(  18,186) {\rnode{Burgess      } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}          Ernest \Large{\textsc{Burgess} } \\ 1886--1966 \end{tabular} } } } 
+\rput(  40,188) {\rnode{Chapin       } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}       F. Stuart \Large{\textsc{Chapin} } \\ 1888--1974 \end{tabular} } } } 
+\rput(  -3,199) {\rnode{Cottrell     } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         Leonard \Large{\textsc{Cottrell} } \\ 1899--1985 \end{tabular} } } } 
+\rput(  18,174) {\rnode{Faris        } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}       Ellsworth \Large{\textsc{Faris} } \\ 1874--1953 \end{tabular} } } } 
+\rput(  50,217) {\rnode{Garfinkel    } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         Harold  \Large{\textsc{Garfinkel} } \\ 1917--2011 \end{tabular} } } } 
+\rput(  35,155) {\rnode{Giddings     } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}        Franklin \Large{\textsc{Giddings} } \\ 1855--1931 \end{tabular} } } } 
+\rput(   2,222) {\rnode{Goffman      } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}          Erving \Large{\textsc{Goffman} } \\ 1922--1982 \end{tabular} } } } 
+\rput(   5,197) {\rnode{Hughes       } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         Everett \Large{\textsc{Hughes} } \\ 1897--1983 \end{tabular} } } } 
+\rput(  31,201) {\rnode{Lazarsfeld   } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}           Paul  \Large{\textsc{Lazarsfeld} } \\ 1901--1976 \end{tabular} } } } 
+\rput(  38,192) {\rnode{Lynd         } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         Robert  \Large{\textsc{Lynd} } \\ 1892--1970 \end{tabular} } } } 
+\rput(   5,163) {\rnode{Mead         } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}   George Herbert \Large{\textsc{Mead} } \\ 1863--1931 \end{tabular} } } } 
+\rput(  35,184) {\rnode{Odum         } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         Howard  \Large{\textsc{Odum} } \\ 1884--1954 \end{tabular} } } } 
+\rput(  22,186) {\rnode{Ogburn       } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         William \Large{\textsc{Ogburn} } \\ 1886--1959 \end{tabular} } } } 
+\rput(  10,164) {\rnode{Park         } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         Robert  \Large{\textsc{Park } } \\ 1864--1944 \end{tabular} } } } 
+\rput(  60,202) {\rnode{Parsons      } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         Talcott \Large{\textsc{Parsons} } \\ 1902--1979 \end{tabular} } } } 
+\rput(  17,210) {\rnode{Shils        } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}          Edward \Large{\textsc{Shils} } \\ 1910--1995 \end{tabular} } } } 
+\rput(   8,158) {\rnode{Simmel       } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}           Georg \Large{\textsc{Simmel} } \\ 1858--1918 \end{tabular} } } } 
+\rput(  12,154) {\rnode{Small        } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}          Albion \Large{\textsc{Small} } \\ 1854--1926 \end{tabular} } } } 
+\rput(  50,189) {\rnode{Sorokin      } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         Pitirim \Large{\textsc{Sorokin} } \\ 1889--1968 \end{tabular} } } } 
+\rput(  20,200) {\rnode{Stouffer     } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}          Samuel \Large{\textsc{Stouffer} } \\ 1900--1960 \end{tabular} } } } 
+\rput(  16,163) {\rnode{Thomas       } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}            W.I. \Large{\textsc{Thomas} } \\ 1863--1947 \end{tabular} } } } 
+\rput(  25,164) {\rnode{Weber        } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}             Max \Large{\textsc{Weber} } \\ 1864--1920 \end{tabular} } } } 
+\rput(  15,197) {\rnode{Wirth        } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}           Louis \Large{\textsc{Wirth} } \\ 1897--1952 \end{tabular} } } } 
+\rput(  54,212) {\rnode{Heartshorne  } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}                 \Large{\textsc{Heartshorne} } \\ 1912--1946 \end{tabular} } } } 
+\rput(  63,210) {\rnode{Homans       } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         George  \Large{\textsc{Homans} } \\ 1910--1989 \end{tabular} } } } 
+\rput(  38,210) {\rnode{Merton       } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         Robert  \Large{\textsc{Merton} } \\ 1910--2003 \end{tabular} } } } 
+\rput(  35,195) {\rnode{Lundberg     } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         George  \Large{\textsc{Lundberg} } \\ 1895--1966 \end{tabular} } } } 
+\rput(  57,227) {\rnode{Bellah       } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         Robert  \Large{\textsc{Bellah} } \\ 1927--2013 \end{tabular} } } } 
+\rput(  60,186) {\rnode{Bernard      } {\psframebox[gradbegin=sociologist1,gradend=sociologist2,linecolor=sociologist3]{ \begin{tabular}{c}         Chester \Large{\textsc{Bernard} } \\ 1886--1961 \end{tabular} } } } 
+\rput(  69,197) {\rnode{DeVoto       } {\psframebox[gradbegin=linguist1,gradend=linguist2,linecolor=linguist3]{ \begin{tabular}{c}         Bernard \Large{\textsc{DeVoto} } \\ 1897--1955 \end{tabular} } } } 
+\rput(  67,180) {\rnode{Mayo         } {\psframebox[gradbegin=psychologist1,gradend=psychologist2,linecolor=psychologist3]{ \begin{tabular}{c}           Elton \Large{\textsc{Mayo} } \\ 1880--1949 \end{tabular} } } } 
+\rput(  71,178) {\rnode{Henderson    } {\psframebox[gradbegin=linguist1,gradend=linguist2,linecolor=linguist3]{ \begin{tabular}{c}            L.J. \Large{\textsc{Henderson} } \\ 1878--1942 \end{tabular} } } } 
+\psset{linearc=0.5,linecolor=teacher}
+\psset{fillstyle=none}
+\ncangle[angleA=90 ,armA=2   ,offsetA=0    ,angleB=-90,armB=4  ,offsetB=0.5  ,linecolor=black     ,linestyle=solid]{Sorokin}{Merton}
+\ncangle[angleA=90 ,armA=0   ,offsetA=1    ,angleB=-90,armB=1  ,offsetB=-0.5 ,linecolor=black     ,linestyle=solid]{Parsons}{Merton}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=0  ,armB=1  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Parsons}{Garfinkel}
+\ncangle[angleA=90 ,armA=0   ,offsetA=-1   ,angleB=-90,armB=1  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Parsons}{Bellah}
+\ncangle[angleA=90 ,armA=0   ,offsetA=1    ,angleB=-90,armB=7  ,offsetB=2    ,linecolor=black     ,linestyle=solid]{GHMead}{Blumer}
+\ncangle[angleA=90 ,armA=0   ,offsetA=-1   ,angleB=180,armB=7  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{GHMead}{Faris}
+\ncangle[angleA=90 ,armA=0   ,offsetA=2    ,angleB=-90,armB=7  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{GHMead}{Cottrell}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0.5  ,angleB=-90,armB=11 ,offsetB=-1   ,linecolor=black     ,linestyle=solid]{Thomas}{Blumer}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=6.5,offsetB=1    ,linecolor=black     ,linestyle=solid]{GHMead}{Wirth}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=11 ,offsetB=0.3  ,linecolor=black     ,linestyle=solid]{Small}{Wirth}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=2  ,offsetB=-1   ,linecolor=black     ,linestyle=solid]{Burgess}{Wirth}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=7  ,offsetB=-0.3 ,linecolor=black     ,linestyle=solid]{Thomas}{Wirth}
+\ncangle[angleA=90 ,armA=0   ,offsetA=1    ,angleB=-90,armB=3  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Park}{Hughes}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=2  ,offsetB=1    ,linecolor=black     ,linestyle=solid]{Park}{Blumer}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=1  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Ogburn}{Stouffer}
+\ncangle[angleA=90 ,armA=0   ,offsetA=1    ,angleB=-90,armB=3  ,offsetB=-1   ,linecolor=black     ,linestyle=solid]{Hughes}{Goffman}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=3  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Warner}{Goffman}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=1  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Hughes}{Becker}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=3  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Goffman}{Schegloff}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=2  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Wirth}{Shils}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=1  ,offsetB=-1   ,linecolor=black     ,linestyle=solid]{Garfinkel}{Schegloff}
+\ncangle[angleA=90 ,armA=1   ,offsetA=-0.2 ,angleB=-90,armB=1  ,offsetB=0.5  ,linecolor=black     ,linestyle=solid]{Allport}{Bruner}
+\ncangle[angleA=180,armA=1   ,offsetA=0.4  ,angleB=-90,armB=1  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Sapir}{Lasswell}
+\ncangle[angleA=90 ,armA=1   ,offsetA=1    ,angleB=-90,armB=4  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Giddings}{Ogburn}
+\ncangle[angleA=90 ,armA=1   ,offsetA=0.5  ,angleB=-90,armB=1  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Giddings}{Odum}
+\ncangle[angleA=90 ,armA=1   ,offsetA=-0.5 ,angleB=-90,armB=5  ,offsetB=0.3  ,linecolor=black     ,linestyle=solid]{Giddings}{Chapin}
+\ncangle[angleA=90 ,armA=1   ,offsetA=-0.5 ,angleB=-90,armB=3  ,offsetB=-0.3 ,linecolor=black     ,linestyle=solid]{Hall}{Chapin}
+\ncangle[angleA=90 ,armA=1   ,offsetA=-1   ,angleB=-90,armB=8  ,offsetB=0.3  ,linecolor=black     ,linestyle=solid]{Small}{Bernard}
+\ncangle[angleA=180,armA=0   ,offsetA=0    ,angleB=0  ,armB=1  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Giddings}{Small}
+\ncangle[angleA=1  ,armA=1   ,offsetA=0    ,angleB=180,armB=1  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Dewey}{Park}
+\ncangle[angleA=0  ,armA=1   ,offsetA=0.4  ,angleB=180,armB=1  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Dewey}{GHMead}
+\ncangle[angleA=90 ,armA=0   ,offsetA=-0.5 ,angleB=-180,armB=0  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Thomas}{Znaniecki}
+\ncangle[angleA=0  ,armA=0   ,offsetA=0    ,angleB=-90,armB=0  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Simmel}{Park}
+\ncangle[angleA=0  ,armA=0   ,offsetA=0    ,angleB=180,armB=2  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Lazarsfeld}{Merton}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=1  ,offsetB=-1   ,linecolor=black     ,linestyle=solid]{Henderson}{Homans}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=2  ,offsetB=0    ,linecolor=black     ,linestyle=solid]{Mayo}{Homans}
+\ncangle[angleA=90 ,armA=0   ,offsetA=0    ,angleB=-90,armB=1.5,offsetB=-0.5 ,linecolor=black     ,linestyle=solid]{DeVoto}{Homans}
+\ncangle[angleA=0  ,armA=0   ,offsetA=0    ,angleB=-90,armB=1.5,offsetB=1    ,linecolor=black     ,linestyle=solid]{Parsons}{Homans}
+\ncangle[angleA=0  ,armA=0   ,offsetA=0    ,angleB=180,armB=1.5,offsetB=0    ,linecolor=black     ,linestyle=solid]{Sorokin}{Parsons}
+\ncangle[angleA=180,armA=0   ,offsetA=0    ,angleB=0  ,armB=1.5,offsetB=0.5  ,linecolor=black     ,linestyle=solid]{Henderson}{Parsons}
+\ncangle[angleA=0  ,armA=0   ,offsetA=0    ,angleB=180,armB=1.5,offsetB=0    ,linecolor=black     ,linestyle=solid]{Homans}{Skinner}
+
+\end{pspicture}
+\end{frame}
+\end{document}
+
+
