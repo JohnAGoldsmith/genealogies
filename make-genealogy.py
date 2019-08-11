@@ -100,64 +100,9 @@ header=r"""
 \psset{fillstyle=solid,fillcolor=linguist-fill4,framearc=0.5}
 \psset{linecolor=linguist-line}
 \psset{shadow=true}
-
-%\psframe(13.5,140)(18.5,153) % kazan school box
-%\psframe(18,162)(23,195)
-%\psframe(24,162)(28,200) % moscow circle
-%\psframe(29,170)(33,210)   % prague Circle
-%\rput(31,206 ){\psframebox[linecolor=black,fillcolor=linguist-fill2]{\Large Prague Linguistic Circle }}
-
-%\psframe[fillcolor=philosopher1](38,177)(49,195)   % vienna Circle
-%\psframe[fillcolor=philosopher1](33,135)(47,162)   % brentano circle
-%\psframe[fillcolor=philosopher1](33.5,176)(37,200)   % Polish logicians 
-
-% Generations: ellipses
-%\psellipse[fillstyle=solid,shadow=true,blur=true](6.5,80)(6,14)  %1st ellipse
-%\psellipse(6.5,119)(5,12)  %2nd ellipse
-%\psellipse (6.5,147)(6,13)  %3rd ellipse
-%\psellipse[fillcolor=linguist-fill3,linestyle=solid](5,200)(10,20)  %sapir circle
-%\psellipse[fillcolor=psychologist-fill3,linestyle=solid](58,189)(6,8)  %gestalt circle
-%\psellipse[fillcolor=psychologist-fill3,linestyle=solid](68,143)(4,25)  %wundt circle
-
-
-%\psset{fillcolor=linguist2}
-
-%\rput(3.3,154 ){\psframebox[ framesep=10pt] { \Large Neogrammarians    }} 
-%\rput(5,160){\psframebox[ linecolor=linguist-line,framesep=10pt]{ \LARGE Third Generation   }}
-%\rput(2,112 ){\psframebox [linecolor=linguist-line,framesep=10pt]{ \LARGE Second Generation   }}
-%\rput(2,85 ){\psframebox[linecolor=linguist-line,framesep=10pt,shadow=false,shadowsize=1,blur=true]{ \LARGE First Generation   }}
-
-
-
-
-%\psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](14,212)(37,235)   % machine translation
-%\psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](20,201)(28,225)   % machine translation
-%\psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5,shadow=false](27,212)(28.5,225)   % machine translation
-
-%\rput(32,230 ){\psframebox{\begin{tabular}{c}{\LARGE Machine translation  }  \end{tabular}}}      
-      
-
-%\rput(2,220 ){\psframebox{\begin{tabular}{c}{\Large Sapir circle }  \end{tabular}}} 
-
-%\psset{linecolor=linguist-line}
-%\rput(19,165 ){\psframebox{\begin{tabular}{c}{\Large St Petersburg School }\\1900-1918 \end{tabular}}}
-%\rput(18,144 ){\psframebox{\begin{tabular}{c}{\Large Kazan School }\\1874-1883 \end{tabular}}}
-%\rput(25,165 ){\psframebox{\begin{tabular}{c}{\Large Moscow School }\\  \end{tabular}}}
-%\rput(31,166 ){\psframebox{\begin{tabular}{c}{\Large Prague Circle }\\  \end{tabular}}}
-%\rput(48,189 ){\psframebox[linecolor=black,fillcolor=philosopher1]{\Large Vienna Circle }}
-%\rput(62,188 ){\psframebox[linecolor=black,fillcolor=psychologist3]{\Large Gestalt }}
-
-
-%sociology
-
-%\psset{gradangle=135,gradmidpoint=0.5,framesep=6pt,fillcolor=sociologist1,framearc=0.5}
-%\psset{linecolor=sociologist3}
-%\rput(-25,150 ){\psframebox[fillcolor=linguist-fill2,linecolor=sociologist-line,framesep=10pt,shadow=false,shadowsize=1,blur=true]{ \LARGE First Generation   }}
-%\psellipse[shadow=true,fillstyle=solid](-14.8,204)(8.5,9)  %5th ellipse
-%\psellipse[shadow=true,fillstyle=solid](-15,200)(8,16)  %2nd generation
-%\psellipse[shadow=true,fillstyle=solid](-15,153)(8,16)  %1ST GENERATION
-%\psellipse[shadow=true,fillstyle=solid](-15,120)(8,6)  %1st ellipse
-
+ 
+  
+ 
 \psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](-5,150)(25,245)   % Chicago sociology
 \psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](27,150)(45,245)   % Columbia sociology
 \psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](47,150)(65,245)   % Harvard sociology
