@@ -213,12 +213,11 @@ class Link:
 myPeople = People()
 myLinks = Links()
 
-outfileName = "genealogy.tex"
 with open (spreadsheet_name, 'r') as infile:
         genealogies = csv.reader(infile)
         for row in genealogies:
                 if row[0]=="!":
-                        outfileName = row[1]+".tex"
+                        outfile_name = row[1]
                 if row[0]=="#":
                         continue
                 if row[0] == "P":
@@ -227,20 +226,21 @@ with open (spreadsheet_name, 'r') as infile:
                 elif row[0] == "L":
                         l = Link(row)
                         myLinks.addLink(l)
-  
-print "Outfile name", outfileName
-outfile = file (outfileName, "w")
-svgoutfileName = outfileName + ".html"
-svgoutfile = file(svgoutfileName, "w")
+
+outfile_name_tex = outfile_name + ".tex"  
+print "Outfile name", outfile_name_tex
+outfile = file (outfile_name_tex, "w")
+svg_outfile_name = outfile_name + ".html"
+svg_outfile = file(svg_outfile_name, "w")
 print >>outfile, header 
  
 
  
 svgFormat = "<rect x=\"{0}\" y=\"{1}\" width=\"50\" height = \"50\", style=\"fill:rgb(0,0,255);stroke-width:3;stroke:rgb(0,0,0)\" /> " 
-print >>svgoutfile, """<!DOCTYPE html>
+print >>svg_outfile, """<!DOCTYPE html>
 <html>
 <body>"""
-print >>svgoutfile, "<svg width=\"2500\" height = \"2000\" >"
+print >>svg_outfile, "<svg width=\"2500\" height = \"2000\" >"
 
 
 print >>outfile, "\\psset{fillstyle=gradient,gradmidpoint=.5,gradangle=45}" 
@@ -275,12 +275,12 @@ for person in myPeople.peopleList:
         
        
         svgOut = svgFormat.format(str(float(person.data[xcoor])*20.0), ycoor*7)
-        print >>svgoutfile, svgOut
+        print >>svg_outfile, svgOut
 
 
-print >>svgoutfile, "</svg>" 
-print >>svgoutfile, "</body>"
-print >>svgoutfile, "</html>"  
+print >>svg_outfile, "</svg>" 
+print >>svg_outfile, "</body>"
+print >>svg_outfile, "</html>"  
 
 angleA="angleA"
 armA="armA"
