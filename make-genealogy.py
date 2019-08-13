@@ -1,11 +1,18 @@
 import csv
 import argparse
+import os
 
-parser = argparse.ArgumentParser(description='Create tex file from spreadsheet; tex creates genealogy graphis.')
-parser.add_argument("spreadsheet_name")
+parser = argparse.ArgumentParser(description='Create tex file from spreadsheet; tex creates genealogy graphs.')
+parser.add_argument("project_name")
 my_arguments = parser.parse_args()
- 
-spreadsheet_name = my_arguments.spreadsheet_name + ".csv"
+project_name = my_arguments.project_name
+print "project name:", project_name
+folder_name =  r"../" +  project_name + r"/genealogies" 
+print "in: ", folder_name
+os.chdir(folder_name)
+spreadsheet_name = project_name + r".csv"
+
+  
 
 header=r"""
 \documentclass[final, 12pt]{beamer}
@@ -227,8 +234,9 @@ with open (spreadsheet_name, 'r') as infile:
                         l = Link(row)
                         myLinks.addLink(l)
 
-outfile_name_tex = outfile_name + ".tex"  
-print "Outfile name", outfile_name_tex
+outfile_name_tex = outfile_name + ".tex"
+outfile_name_dvi = outfile_name + ".dvi"
+print "1. Outfile name", outfile_name_tex
 outfile = file (outfile_name_tex, "w")
 svg_outfile_name = outfile_name + ".html"
 svg_outfile = file(svg_outfile_name, "w")
@@ -315,3 +323,9 @@ for link in myLinks.linkList:
 
 print >>outfile, footer
 outfile.close()
+
+print "folder name: ", folder_name
+os.system("latex "  + outfile_name_tex)
+os.system("dvipdf " + outfile_name_dvi)
+
+
