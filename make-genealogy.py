@@ -3,7 +3,7 @@ import argparse
 import os
 
 parser = argparse.ArgumentParser(description='Create tex file from spreadsheet; tex creates genealogy graphs.')
-parser.add_argument("project_name")
+parser.add_argument("project_name", help="Obligatory parameter, name of subfolder and also spreadsheet within that.")
 my_arguments = parser.parse_args()
 project_name = my_arguments.project_name
 print "project name:", project_name
