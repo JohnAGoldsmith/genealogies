@@ -6,7 +6,7 @@ parser = argparse.ArgumentParser(description='Create tex file from spreadsheet; 
 parser.add_argument("project_name", help="Obligatory parameter, name of subfolder and also spreadsheet within that.")
 my_arguments = parser.parse_args()
 project_name = my_arguments.project_name
-print "project name:", project_name
+print ("project name:", project_name)
 folder_name =  r"../" +  project_name + r"/genealogies" 
 print "in: ", folder_name
 os.chdir(folder_name)
@@ -109,16 +109,9 @@ header=r"""
 \psset{shadow=true}
  
   
+\psellipse[shadow=true,fillstyle=solid](10,124)(4,10) 
  
-\psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](-5,150)(25,245)   % Chicago sociology
-\psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](27,150)(45,245)   % Columbia sociology
-\psframe[fillcolor=linguist-fill2,linestyle=none,framearc=0.5](47,150)(65,245)   % Harvard sociology
-\psframe[fillstyle=none,linecolor=black,linestyle=solid,framearc=0.5](58,180)(70,220)   % Harvard soc rel
-%\psellipse[shadow=true,fillstyle=solid](-5,180)(10,10)  % Columbia ellipse
-%\psellipse[shadow=true,fillstyle=solid](10.4,19)(3,10)  % Harvard ellipse
-%\psellipse[shadow=true,fillstyle=solid](-15,160)(3,8)  % UChicago ellipse
-%\psellipse[shadow=true,fillstyle=solid](-15,186)(3,4)  % bernard ogburn and chapin
-
+ 
 
 %\psset{shadow=false}
 
