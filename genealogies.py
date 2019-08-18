@@ -338,77 +338,8 @@ print >>outfile, "\\psset{linearc=0.5,linecolor=teacher}"
 
 print >>outfile, "\\psset{fillstyle=none}"
 
-
-p = Link("Sorokin", "Merton",90,2,0,-90,4,0)
-myLinks.addLink(p)
-
-p = Link("Parsons", "Merton",90,0,0,-90,1,-1)
-myLinks.addLink(p)
-
-p = Link("Zeisel", "Lazarsfeld",0,0,0,180,1,0, "colleagues")
-myLinks.addLink(p)
-
  
-
-p = Link("Lazarsfeld", "Stouffer",0,0,0,180,0,0)
-myLinks.addLink(p)
-
-p = Link("Lazarsfeld", "Boudon",90,0,0,-90,1,-1)
-myLinks.addLink(p)
-
-p = Link("Lazarsfeld", "Coleman",90,0,.5,-90,1,-1)
-myLinks.addLink(p)
-
-p = Link("Dewey", "Chapin",90,0,0,-90,1,-1)
-myLinks.addLink(p)
-
-p = Link("charlottebuhler", "Lazarsfeld",90,0,0,-90,1,-1)
-myLinks.addLink(p)
-
-p = Link("charlottebuhler", "Lazarsfeld",90,0,0,-90,1,-1)
-myLinks.addLink(p)
-
-p = Link("Wundt", "GHMead",90,0,0,-90,1,-1)
-myLinks.addLink(p)
-
-
-
-
-
-
-
-
-
-p = Link("Herder", "Fichte",90,3,-.5,-90,4,0.5)
-myLinks.addLink(p)
-
-
-p = Link("Kant", "Fichte",90,3,-.5,-90,4,-0.5)
-myLinks.addLink(p)
-
  
-
-p = Link("Langfeld", "Allport",90,1,0,-90,5,0)
-myLinks.addLink(p)
-
-p = Link("Carnap", "Quine",90,3,0,-90,4,0)
-myLinks.addLink(p)
- 
-
-
-p = Link("Cassirer", "Lewin",90,3,0,-90,4,0)
-myLinks.addLink(p)
-
-
-p = Link("Bopp", "Whitney",90,3,0,-90,4,.33)
-myLinks.addLink(p)
-
-p = Link("Curtius", "Whitney",180,1,0,-90,1,-.33)
-myLinks.addLink(p)
-
-p = Link("Lepsius", "Whitney",90,1,1,-90,3,0)
-myLinks.addLink(p)
-
 p = Link("Mueller", "Whitney", 180,0,0,-90,0,-.33)
 myLinks.addLink(p)
 
@@ -455,23 +386,7 @@ myLinks.addLink(p)
 p = Link("Benedict", "Mead", 90,1,0,-90,2,.7)
 myLinks.addLink(p)
 
-p = Link("Sapir", "Swadesh", 90,1,1.2,-90,3,.7 )
-myLinks.addLink(p)
-
-p = Link("Sapir", "Newman", 90,1.5,.9,-90,1,0 )
-myLinks.addLink(p)
-
-p = Link("Sapir", "Haas", 90,1,.6,-90,2,.5)
-myLinks.addLink(p)
-p = Link("Sapir", "Hockett", 90,1,.3,-90,2,0.5)
-myLinks.addLink(p)
-
-p = Link("Sapir", "Voegelin", 90,0,0,-90,0,0,"postDoc")
-myLinks.addLink(p)
-
-p = Link("Sapir", "Harris", 90,1,-.3,-90,2,.3 )
-myLinks.addLink(p)
-
+  
 
 p = Link("Sapir", "Kluckhohn", 90,1,-.6,-90,2.5,1.4, "influence")
 myLinks.addLink(p)
@@ -725,42 +640,8 @@ myLinks.addLink(p)
 
 p = Link("Hilbert", "Husserl", 0,1,0,180,3,0, "colleagues" )
 myLinks.addLink(p)
+    
  
-p = Link("Allport", "Bruner", 90,1,-.2,-90,1,.5 )
-myLinks.addLink(p)
-
-p = Link("Sapir", "Lasswell", 180,1,.4,-90,1,0, "colleagues" )
-myLinks.addLink(p)
-
-p = Link("Giddings", "Ogburn", 90,1,0.0,-90,1,0, "teacher" )
-myLinks.addLink(p)
-
-p = Link("Giddings", "Odum", 90,1,0.5,-90,1,0, "teacher" )
-myLinks.addLink(p)
-
-p = Link("Giddings", "Chapin", 90,1,-0.5,-90,3,0.3, "teacher" )
-myLinks.addLink(p)
-
-p = Link("Hall", "Chapin", 90,1,-0.5,-90,3,-.3, "teacher" )
-myLinks.addLink(p)
-  
-p = Link("Small", "Bernard", 90,1,-0.5,-90,3,.3, "teacher" )
-myLinks.addLink(p)
-
-p = Link("Giddings", "Small", 0,0,0,180,1,0, "hostile" )
-myLinks.addLink(p)
-
-
-  
-p = Link("Dewey", "GHMead", 90,0,-0.5,-90,0,.3, "teacher" )
-myLinks.addLink(p)
-  
-
-p = Link("Simmel", "Park", 0,0,0,-90,0,0, "teacher" )
-myLinks.addLink(p)
-  
-
-
 for link in myLinks.linkList:
         thisAngleA = link.data[angleA]
         thisArmA = link.data[armA]
